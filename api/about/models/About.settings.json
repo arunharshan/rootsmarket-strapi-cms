@@ -1,0 +1,19 @@
+{
+  "connection": "default",
+  "collectionName": "about",
+  "info": {
+    "name": "about",
+    "description": "about the project"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "summary": {
+      "type": "text"
+    },
+    "tech": {
+      "type": "json"
+    }
+  }
+}

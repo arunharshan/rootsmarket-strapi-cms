@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "orders",
+  "info": {
+    "name": "orders",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "cart": {
+      "type": "json"
+    },
+    "token": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "string"
+    },
+    "purchase_date": {
+      "type": "date"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/usstates",
+      "handler": "Usstate.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/usstates/count",
+      "handler": "Usstate.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/usstates/:_id",
+      "handler": "Usstate.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/usstates",
+      "handler": "Usstate.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/usstates/:_id",
+      "handler": "Usstate.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/usstates/:_id",
+      "handler": "Usstate.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

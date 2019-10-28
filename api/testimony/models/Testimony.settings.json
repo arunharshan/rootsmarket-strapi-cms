@@ -1,0 +1,21 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "testimony",
+    "description": "customer testimony"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "comments": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}

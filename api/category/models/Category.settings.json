@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "category",
+  "info": {
+    "name": "category",
+    "description": "list of all categories data"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title_small": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image_small": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "image_large": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "title_large": {
+      "type": "string"
+    },
+    "products": {
+      "collection": "product",
+      "via": "categories"
+    }
+  }
+}

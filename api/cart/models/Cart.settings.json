@@ -1,0 +1,19 @@
+{
+  "connection": "default",
+  "collectionName": "cart",
+  "info": {
+    "name": "cart",
+    "description": "user cart details\n"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "cart": {
+      "type": "json"
+    },
+    "customer_id": {
+      "type": "string"
+    }
+  }
+}

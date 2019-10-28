@@ -1,0 +1,57 @@
+{
+  "connection": "default",
+  "collectionName": "prouct",
+  "info": {
+    "name": "product",
+    "description": "all products will list here"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "avaliable": {
+      "type": "boolean",
+      "default": true
+    },
+    "supplier": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "details": {
+      "type": "text"
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "reviews": {
+      "type": "text"
+    },
+    "thumbnails": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "old_price": {
+      "type": "decimal"
+    },
+    "has_offer": {
+      "type": "boolean"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "products",
+      "dominant": true
+    }
+  }
+}

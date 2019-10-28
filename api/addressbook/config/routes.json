@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/addressbooks",
+      "handler": "Addressbook.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/addressbooks/count",
+      "handler": "Addressbook.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/addressbooks/:_id",
+      "handler": "Addressbook.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/addressbooks",
+      "handler": "Addressbook.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/addressbooks/:_id",
+      "handler": "Addressbook.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/addressbooks/:_id",
+      "handler": "Addressbook.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

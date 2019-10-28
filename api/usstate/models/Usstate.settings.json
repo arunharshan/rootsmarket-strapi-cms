@@ -1,0 +1,16 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "usstate",
+    "description": "List of US states"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "states": {
+      "type": "json"
+    }
+  }
+}

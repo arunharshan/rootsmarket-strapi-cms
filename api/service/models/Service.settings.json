@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "service",
+  "info": {
+    "name": "service",
+    "description": "what services we provide and top satisfied customer comments"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}
