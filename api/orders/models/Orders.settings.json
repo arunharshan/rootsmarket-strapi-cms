@@ -12,7 +12,7 @@
     "cart": {
       "type": "json"
     },
-    "token": {
+    "cc_token": {
       "type": "string"
     },
     "amount": {

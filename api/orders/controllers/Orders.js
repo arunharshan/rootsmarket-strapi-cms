@@ -62,7 +62,7 @@ module.exports = {
       amount,
       zipcode,
       city,
-      token,
+      cc_token,
       cart,
       user_id,
       purchase_date
@@ -73,7 +73,7 @@ module.exports = {
       currency: 'usd',
       customer: ctx.state.user_id,
       description: `Order ${new Date(Date.now())}- User, ${name} ${user_id}`,
-      source: token
+      source: cc_token
     });
 
     const order = await strapi.services.orders.add({
@@ -81,7 +81,7 @@ module.exports = {
       amount,
       cart,
       user_id,
-      token,
+      cc_token,
       purchase_date
     });
     return order;
